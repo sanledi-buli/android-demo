@@ -47,8 +47,8 @@ def gitFlow() {
 
 def build() {
   dir("${projectName}-${branchName}") {
-    sh "gradle clean"
-    sh "gradle build"
+    sh "./gradlew clean"
+    sh "./gradlew build"
   }
 }
 
