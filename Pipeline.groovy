@@ -39,7 +39,7 @@ def gitFlow() {
       sh "git clone ${projectURL} ${projectName}-${branchName}"
       dir("${projectName}-${branchName}") {
         sh "git fetch origin ${branchName}"
-        sh "git checkout origin ${branchName}"
+        sh "git checkout ${branchName}"
       }
     }
   }
